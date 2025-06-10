@@ -10,8 +10,10 @@ import InfoAndEvents from "./ui/sections/InfoAndEvents";
 import OtherInfo from "./ui/sections/OtherInfo";
 import ContactUs from "./ui/ContactUs";
 import Footer from "./ui/sections/Footer";
+import useServiceWorker from "./hook/useServiceWorker";
 
 export default function App() {
+  useServiceWorker();
   return (
     <>
       <header className="fixed left-0 top-0 w-full z-50">
